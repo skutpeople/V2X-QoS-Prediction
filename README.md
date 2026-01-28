@@ -23,6 +23,7 @@ Oleh karena itu, digunakan machine learning untuk memprediksi QoS secara proakti
 ---
 
 **📊 Dataset**
+
 Nama dataset: Berlin V2X Dataset
 Lokasi: Berlin, Jerman
 Sumber: Proyek AI4Mobile, didukung BMBF Germany
@@ -38,6 +39,7 @@ Teknologi jaringan:
 ---
 
 **🧩 Features & Target**
+
 - Target (Label)
 
 Throughput (bps) yang merepresentasikan Quality of Service (QoS)
@@ -45,6 +47,7 @@ Throughput (bps) yang merepresentasikan Quality of Service (QoS)
 ---
 
 **Input Features**
+
 1. Cellular Parameters
 - PCell & SCell:
 RSRP, RSRQ, RSSI, SNR, Downlink Num RBs, TB Size, Average MCS, Bandwidth, Carrier Frequency, dll
@@ -59,6 +62,7 @@ RSRP, RSRQ, RSSI, SNR, Downlink Num RBs, TB Size, Average MCS, Bandwidth, Carrie
 ---
 
 **🛠️ Data Preprocessing**
+
 Langkah preprocessing utama:
 - Drop Cell Identity (tidak informatif)
 - Imputasi nilai kosong: SCell non-aktif → diisi 0, Bandwidth → mean conditional
@@ -68,6 +72,7 @@ Langkah preprocessing utama:
 - Custom preprocessing pipeline (end-to-end)
 
 **⚙️ Feature Engineering**
+
 Beberapa metrik jaringan yang diturunkan:
 - SINR
 - Shannon Capacity
@@ -76,6 +81,7 @@ Beberapa metrik jaringan yang diturunkan:
 - Frequency Selective Fading
 
 **🤖 Machine Learning Approach**
+
 - Problem Type: Regression
 - Individual Models: Elastic Net, Random Forest Regressor, MLP Regressor, XGBoost Regressor, LightGBM Regressor, CatBoost Regressor
 - Hyperparameter Tuning: BayesSearchCV
@@ -84,6 +90,7 @@ Beberapa metrik jaringan yang diturunkan:
 ---
 
 **🧬 Stacking Model**
+
 - Base Learners: XGBoost, LightGBM, CatBoost
 
 - Meta Learners: Random Forest Regressor
@@ -91,6 +98,7 @@ Beberapa metrik jaringan yang diturunkan:
 ---
 
 **📈 Evaluation Metrics**
+
 - RMSE
 - MAE
 - MAPE
@@ -100,6 +108,7 @@ Beberapa metrik jaringan yang diturunkan:
 ---
 
 **🏆 Results**
+
 - Best individual models: XGBoost, LightGBM, CatBoost
 - Best overall model:
 👉 Stacking Model dengan Random Forest sebagai Meta Learner
@@ -111,6 +120,7 @@ Final performance:
 ---
 
 **🚀 Use Cases**
+
 - Prediksi area QoS rendah (terowongan, area padat bangunan)
 - Optimasi penempatan RSU / repeater
 - Network resource allocation secara proaktif
@@ -118,6 +128,7 @@ Final performance:
 
 **⚠️ Limitations & Future Work
 Limitations**
+
 - Dataset terbatas (subset dari data mentah)
 - Keterbatasan komputasi
 - Future Improvements
