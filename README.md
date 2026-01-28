@@ -2,6 +2,7 @@
 ---
 
 **📡 Overview**
+
 Project ini bertujuan untuk memprediksi Quality of Service (QoS) pada komunikasi Vehicle-to-Everything (V2X) menggunakan pendekatan machine learning regression. Target prediksi berupa throughput jaringan (bps) yang merepresentasikan kualitas koneksi kendaraan terhadap jaringan seluler.
 
 Pendekatan ini relevan untuk penerapan 5G/6G, smart cities, dan kendaraan otonom, di mana keterlambatan atau penurunan kualitas komunikasi dapat berdampak langsung pada keselamatan dan efisiensi sistem transportasi.
