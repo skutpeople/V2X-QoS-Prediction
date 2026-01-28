@@ -1,14 +1,14 @@
 # V2X-QoS-Prediction
 ---
 
-**📡 Overview **
+**📡 Overview**
 Project ini bertujuan untuk memprediksi Quality of Service (QoS) pada komunikasi Vehicle-to-Everything (V2X) menggunakan pendekatan machine learning regression. Target prediksi berupa throughput jaringan (bps) yang merepresentasikan kualitas koneksi kendaraan terhadap jaringan seluler.
 
 Pendekatan ini relevan untuk penerapan 5G/6G, smart cities, dan kendaraan otonom, di mana keterlambatan atau penurunan kualitas komunikasi dapat berdampak langsung pada keselamatan dan efisiensi sistem transportasi.
 
 ---
 
-**🧠 Problem Statement **
+**🧠 Problem Statement**
 Metode tradisional seperti:
 - rule-based monitoring
 - static thresholding
@@ -21,7 +21,7 @@ Oleh karena itu, digunakan machine learning untuk memprediksi QoS secara proakti
 
 ---
 
-**📊 Dataset **
+**📊 Dataset**
 Nama dataset: Berlin V2X Dataset
 Lokasi: Berlin, Jerman
 Sumber: Proyek AI4Mobile, didukung BMBF Germany
