@@ -126,14 +126,6 @@ Final performance:
 - Network resource allocation secara proaktif
 - Simulasi perencanaan kota berbasis V2X
 
-**⚠️ Limitations & Future Work
-Limitations**
-
-- Dataset terbatas (subset dari data mentah)
-- Keterbatasan komputasi
-- Future Improvements
-- Memproses raw dataset untuk skala besar
-
 ---
 
 **👥 Contributors**
